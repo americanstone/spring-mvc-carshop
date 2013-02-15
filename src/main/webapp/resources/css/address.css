@@ -1,0 +1,85 @@
+BODY {	
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	padding: 0;
+	margin: 0 auto;
+	line-height: 130%;
+}
+
+td{
+	height:35px;
+	padding:10px;
+	
+}
+
+#title
+{
+	margin: 50px auto;
+	text-align:center;
+	font-wight: bold;
+	font-size: 30px;
+}
+
+.hr1
+{ 
+	margin-top: -20px;
+	width: 70%;
+	height:1px;
+	border:none;
+	border-top:10px groove skyblue;
+}
+
+#address_content
+{
+	margin-top: 30px;
+	margin-butto: 0px;
+}
+
+#address_table
+{
+	font-size: 16px;
+	margin: 10px auto;
+}
+
+.address_left
+{
+	text-align: left;
+}
+
+#upate_table
+{
+	margin: 5px auto;
+}
+
+#confirm_table
+{
+	margin: 5px auto;
+}
+
+.update_button
+{
+	width:	70px;
+	height: 25px;
+	font-size: 15px;
+}
+
+.confirm_button
+{
+	width:	70px;
+	height: 25px;
+	font-size: 15px;
+	margin-right: 5px;
+}
+
+.cancel_button
+{
+	width:	70px;
+	height: 25px;
+	font-size: 15px;
+	margin-left: 5px;
+}
+
+.gray_row
+{
+	background-color: #E9E9E9;
+}

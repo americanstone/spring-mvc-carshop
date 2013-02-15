@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns="http://www.springframework.org/schema/mvc"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:beans="http://www.springframework.org/schema/beans"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<annotation-driven />
+	<context:component-scan base-package="com.youcodehub.spring" />
+	<resources mapping="/resources/**" location="/resources/" />
+
+	<beans:bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<beans:property name="prefix" value="/WEB-INF/views/" />
+		<beans:property name="suffix" value=".jsp" />
+	</beans:bean>
+	
+	<beans:bean id="messageSource" class="org.springframework.context.support.ResourceBundleMessageSource">
+        <beans:property name="basename" value="messages"/>
+    </beans:bean>
+    
+	<!-- Only needed because we require fileupload in the org.springframework.samples.mvc.fileupload package -->
+	<beans:bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver" />
+	
+	
+	<!-- <beans:bean name="/welcome" class="com.youcodehub.spring.web.HomeController"></beans:bean> -->
+	
+<!-- 	<beans:bean id="/login" class="com.youcodehub.spring.web.LoginController">
+		<beans:property name="userManager" ref="userManager"/>
+		<beans:property name="formView" value="login"/>
+		<beans:property name="successView" value="welcome" />
+		<beans:property name="sessionForm" value="true" />
+		<beans:property name="commandName" value="userLogin" />
+		<beans:property name="commandClass" value="com.youcodehub.spring.service.UserLogin"/>
+		<beans:property name="validator" >
+			<beans:bean class="com.youcodehub.spring.service.UserLoginValidator"/>
+		</beans:property> 
+	</beans:bean> -->
+	
+	<!-- <beans:bean id="/register" class="com.youcodehub.spring.web.RegisterController">
+		<beans:property name="userManager" ref="userManager"/>
+		<beans:property name="formView" value="register"/>
+		<beans:property name="successView" value="welcome" />
+		<beans:property name="sessionForm" value="true" />
+		<beans:property name="commandName" value="userRegister" />
+		<beans:property name="commandClass" value="com.youcodehub.spring.service.UserRegister"/>
+		<beans:property name="validator" >
+			<beans:bean class="com.youcodehub.spring.service.UserRegisterValidator"/>
+		</beans:property> 
+	</beans:bean> -->
+	
+
+</beans:beans>

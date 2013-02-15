@@ -1,0 +1,19 @@
+.main{
+	background: #4099FF;
+	height: 500px;
+	width: 70%;
+	margin: auto;
+	border: 1px;
+	border-style:solid;
+	box-shadow: 10px 5px 5px black;
+}
+
+.fontstyle{
+	font-family: 'Averia Libre', cursive;
+	color: white;
+
+}
+.table{
+	margin: auto;
+	
+}

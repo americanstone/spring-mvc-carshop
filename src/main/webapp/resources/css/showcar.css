@@ -1,0 +1,19 @@
+
+
+td{
+	height:35px;
+	padding:10px;
+	border: 1px solid black;
+}
+.showcar-table{
+	float:left;
+	
+}
+.showcar-div{
+	margin-left:60px;
+	
+}
+.showcar-outside{
+	margin-left:100px;
+	padding-left:100px;
+}

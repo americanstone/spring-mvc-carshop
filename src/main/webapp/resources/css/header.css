@@ -1,0 +1,89 @@
+.header{
+	margin: auto;
+	width: 70%;
+	height:60px;
+	background: #424242;
+	overflow:hidden;
+
+}
+.header-banner{
+	margin: auto;
+	width: 75%;
+	height: 100px;
+	background: #4099FF;
+	overflow: hidden;
+}
+.left-triangle{
+border-color: transparent #4099FF transparent transparent;
+border-style:solid;
+border-width:30px;
+height:0px;
+    width:0px;
+    position: relative;
+    left:150px;
+    top: 5px;
+	margin-bottom: 0px;
+    z-index: -1; /* displayed under bubble */
+	overflow: hidden;
+
+}
+.right-triangle{
+
+
+}
+.title{
+	font-family: 'Averia Libre', cursive;
+	color: white;
+}
+
+.topmenu{
+	margin-left:auto;
+	margin-right: auto;
+	width: 70%;
+	height:60px;
+	background: -webkit-gradient(linear, left top, left bottom, from(#F0F7FF), to(#E0D8E0));
+	overflow: hidden;
+	box-shadow: 10px 5px 5px black;
+	
+}
+
+.topmenuitems{
+	position: relative;
+	margin: 0 auto;
+	border-spacing: 5px;
+	
+}
+.items{
+	position: relative;
+	padding-right:100px;
+	padding-left:100px;
+	border-right: 3px solid #E0D8E0;
+	font-family: 'Iceberg', cursive;
+	
+	font-size: 20px;
+
+}
+.items:last-child { 
+	border-right: none; 
+	}
+.topmenuanchors{
+	text-decoration:none;
+	color: black;
+
+}
+.display{
+	position:relative;
+	display:block;
+	margin: auto;
+}
+
+.login{
+
+	visibility: hidden;
+	position: absolute;
+	z-index: 80;
+	background: #4099FF;
+	border: 1 1 1 1;
+	opacity: 0.7;
+	display: inline-block;
+}

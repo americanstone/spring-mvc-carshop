@@ -1,0 +1,180 @@
+------WebKitFormBoundaryWowEdgJp4IzAVAu9
+Content-Disposition: form-data; name="uname"
+
+jingzhao
+------WebKitFormBoundaryWowEdgJp4IzAVAu9
+Content-Disposition: form-data; name="file"; filename="insert_data.sql"
+Content-Type: text/plain
+
+DELETE FROM department;
+INSERT INTO department VALUES ('Computer Science');
+INSERT INTO department VALUES ('Mathmetics');
+
+DELETE FROM users;
+INSERT INTO users VALUES ('admin@sju.edu', '7180fc5d71fe7867d04e95de59154bdb0fe2be71', 'Admin', NULL, 'Admin');
+INSERT INTO users VALUES ('jz570129@sju.edu', '7c6a61c68ef8b9b6b061b28c348bc1ed7921cb53', 'Jing Zhao', 'image/users/jing.png', 'Student');
+INSERT INTO users VALUES ('gz570130@sju.edu', '7c6a61c68ef8b9b6b061b28c348bc1ed7921cb53', 'Guojun Zhang', 'image/users/guojun.png', 'Student');
+INSERT INTO users VALUES ('fb482509@sju.edu', '7c6a61c68ef8b9b6b061b28c348bc1ed7921cb53', 'Felipe Boyd ', 'image/users/felipe.png', 'Student');
+INSERT INTO users VALUES ('tezel@sju.edu', '7c6a61c68ef8b9b6b061b28c348bc1ed7921cb53', 'Dr. Suzan Koknar-Tezel', 'image/users/tezel.jpg', 'Professor');
+INSERT INTO users VALUES ('bforoura@sju.edu', '7c6a61c68ef8b9b6b061b28c348bc1ed7921cb53', 'Dr. Babak Forouraghi', 'image/users/bforoura.jpg', 'Professor');
+INSERT INTO users VALUES ('ggrevera@sju.edu', '7c6a61c68ef8b9b6b061b28c348bc1ed7921cb53', 'Dr. George Grevera', 'image/users/ggrevera.jpg', 'Professor');
+INSERT INTO users VALUES ('fatalay@sju.edu', '7c6a61c68ef8b9b6b061b28c348bc1ed7921cb53', 'Dr. Atalay ', 'image/users/fatalay.jpg', 'Professor');
+INSERT INTO users VALUES ('swei@sju.edu', '7c6a61c68ef8b9b6b061b28c348bc1ed7921cb53', 'Dr. Susanna Wei ', 'image/users/swei.jpg', 'Professor');
+INSERT INTO users VALUES ('ty502008@sju.edu', '7c6a61c68ef8b9b6b061b28c348bc1ed7921cb53', 'Tina Young ', 'image/users/tina.jpg', 'Student');
+INSERT INTO users VALUES ('co564293@sju.edu', '7c6a61c68ef8b9b6b061b28c348bc1ed7921cb53', 'Jim Lee', 'image/users/jim.jpg', 'Student');
+INSERT INTO users VALUES ('st560563@sju.edu', '7c6a61c68ef8b9b6b061b28c348bc1ed7921cb53', 'Jack Mullinsr', 'image/users/jack.jpg', 'Student');
+INSERT INTO users VALUES ('js562187@sju.edu', '7c6a61c68ef8b9b6b061b28c348bc1ed7921cb53', 'Mike Scott ', 'image/users/mike.jpg', 'Student');
+INSERT INTO users VALUES ('es562838@sju.edu', '7c6a61c68ef8b9b6b061b28c348bc1ed7921cb53', 'Emily Steele', 'image/users/emily.jpg', 'Student');
+INSERT INTO users VALUES ('dl564293@sju.edu', '7c6a61c68ef8b9b6b061b28c348bc1ed7921cb53', 'Dylan Black', 'image/users/dylan.png', 'Student');
+INSERT INTO users VALUES ('ab567171@sju.edu', '7c6a61c68ef8b9b6b061b28c348bc1ed7921cb53', 'Alex Leonard', 'image/users/alex.jpg', 'Student');
+INSERT INTO users VALUES ('rm564293@sju.edu', '7c6a61c68ef8b9b6b061b28c348bc1ed7921cb53', 'Robert Tanenbaum', 'image/users/rob.jpg', 'Student');
+INSERT INTO users VALUES ('ps564293@sju.edu', '7c6a61c68ef8b9b6b061b28c348bc1ed7921cb53', 'Patty Scott', 'image/users/patty.png', 'Student');
+INSERT INTO users VALUES ('cl564293@sju.edu', '7c6a61c68ef8b9b6b061b28c348bc1ed7921cb53', 'Candy Lin', 'image/users/candy.jpg', 'Student');
+INSERT INTO users VALUES ('pw564293@sju.edu', '7c6a61c68ef8b9b6b061b28c348bc1ed7921cb53', 'Pam White', 'image/users/pam.jpg', 'Student');
+
+
+DELETE FROM course;
+INSERT INTO course VALUES (NULL, 'image/courses/Internet Application Development/IADcourseimage.png', 'Internet Application Development', 'This course will attempt to give you experience in designing Internet applications. A student finishing this course should be able to design, implement, and maintain a large community or e-commerce web site. They should leave the course with an understanding of a variety of Internet protocols and markup languages, a knowledge of at least one common scripting tool, an understanding of how to implement a database back-end into a large-scale site, and the ability to critically assess the usability of both their design and the design of others.', 'bforoura@sju.edu', 'Computer Science', '2012Fall');
+INSERT INTO course VALUES (NULL, 'image/courses/CSS626 Web Technologies/computer_network.png', 'CSS626 Web Technologies', 'Topics include organization of Meta-Markup languages, Document Type Definitions (DTDs), document validity and well-formedness, style languages, namespaces, Transformations, XML parsers, Web Services, and Web Security Specifications. Course includes programming projects.', 'bforoura@sju.edu', 'Computer Science', '2012Fall');
+INSERT INTO course VALUES (NULL, 'image/courses/Artificial Intelligence/artificial_intelligence.png', 'Artificial Intelligence', 'The course covers fundamental concepts such as role of logic in reasoning, deductive proofs, and blind and informed search techniques. Additional topics may include inductive learning, genetic algorithms, decision trees, planning, natural language processing, game trees and perceptron learning. A language suitable for symbolic processing will be introduced.', 'bforoura@sju.edu', 'Computer Science', '2012Fall');
+INSERT INTO course VALUES (NULL, 'image/courses/CSC 550 Objected Oriented and Data Structure/data_structure.png', 'CSC 550 Objected Oriented and Data Structure', 'Data structure', 'tezel@sju.edu', 'Computer Science', '2012Fall');
+INSERT INTO course VALUES (NULL, 'image/courses/Computer Science I/programming_language.png', 'Computer Science I', 'Java I', 'swei@sju.edu', 'Computer Science', '2012Fall');
+INSERT INTO course VALUES (NULL, 'image/courses/Computer Science II/computer_science.png', 'Computer Science II', 'Java II', 'swei@sju.edu', 'Computer Science', '2012Fall');
+INSERT INTO course VALUES (NULL, 'image/courses/Computer Vision/computer_vision.png', 'Computer Vision', 'vision', 'ggrevera@sju.edu', 'Computer Science', '2012Fall');
+INSERT INTO course VALUES (NULL, 'image/courses/Computer System/computer_system.png', 'Computer System', 'This course will attempt to introduce Linux operating system', 'bforoura@sju.edu', 'Computer Science', '2012Fall');
+INSERT INTO course VALUES (NULL, 'image/courses/Network Security/cryptography.png', 'Network Security', 'Network Security and Cryptography', 'bforoura@sju.edu', 'Computer Science', '2012Fall');
+
+DELETE FROM groups;
+INSERT INTO groups VALUES('group1', 1, NULL);
+INSERT INTO groups VALUES('group2', 1, NULL);
+INSERT INTO groups VALUES('group3', 1, NULL);
+INSERT INTO groups VALUES('group4', 1, NULL);
+
+DELETE FROM usercourses;
+INSERT INTO usercourses VALUES('bforoura@sju.edu', 1, 'Instructor', NULL);
+INSERT INTO usercourses VALUES('bforoura@sju.edu', 2, 'Instructor', NULL);
+INSERT INTO usercourses VALUES('bforoura@sju.edu', 3, 'Instructor', NULL);
+INSERT INTO usercourses VALUES('tezel@sju.edu', 4, 'Instructor', NULL);
+INSERT INTO usercourses VALUES('swei@sju.edu', 5, 'Instructor', NULL);
+INSERT INTO usercourses VALUES('swei@sju.edu', 6, 'Instructor', NULL);
+INSERT INTO usercourses VALUES('ggrevera@sju.edu', 7, 'Instructor', NULL);
+INSERT INTO usercourses VALUES('bforoura@sju.edu', 8, 'Instructor', NULL);
+INSERT INTO usercourses VALUES('bforoura@sju.edu', 9, 'Instructor', NULL);
+
+INSERT INTO usercourses VALUES('jz570129@sju.edu', 1, 'Student', 'group3');
+INSERT INTO usercourses VALUES('gz570130@sju.edu', 1, 'Student', 'group3');
+INSERT INTO usercourses VALUES ('ty502008@sju.edu', 1,'Student', 'group1');
+INSERT INTO usercourses VALUES ('co564293@sju.edu', 1, 'Student', 'group1');
+INSERT INTO usercourses VALUES ('st560563@sju.edu', 1, 'Student', 'group1');
+INSERT INTO usercourses VALUES ('js562187@sju.edu', 1, 'Student', 'group2');
+INSERT INTO usercourses VALUES ('es562838@sju.edu', 1, 'Student', 'group2');
+INSERT INTO usercourses VALUES ('fb482509@sju.edu', 1, 'Student', 'group3');
+INSERT INTO usercourses VALUES ('dl564293@sju.edu', 1, 'Student', 'group4');
+INSERT INTO usercourses VALUES ('ab567171@sju.edu', 1, 'Student', 'group4');
+INSERT INTO usercourses VALUES ('rm564293@sju.edu', 1, 'Student', 'group4');
+
+INSERT INTO usercourses VALUES('jz570129@sju.edu', 2, 'Student', NULL);
+INSERT INTO usercourses VALUES ('rm564293@sju.edu', 2, 'Student', NULL);
+INSERT INTO usercourses VALUES ('es562838@sju.edu', 2, 'Student', NULL);
+INSERT INTO usercourses VALUES ('gz570130@sju.edu', 2, 'Student', NULL);
+INSERT INTO usercourses VALUES ('ps564293@sju.edu', 2, 'Student', NULL);
+INSERT INTO usercourses VALUES ('cl564293@sju.edu', 2, 'Student', NULL);
+INSERT INTO usercourses VALUES ('pw564293@sju.edu', 2, 'Student', NULL);
+
+INSERT INTO usercourses VALUES('fb482509@sju.edu', 3, 'Student', NULL);
+INSERT INTO usercourses VALUES('gz570130@sju.edu', 3, 'Student', NULL);
+INSERT INTO usercourses VALUES ('js562187@sju.edu', 3, 'Student', NULL);
+INSERT INTO usercourses VALUES ('es562838@sju.edu', 3, 'Student', NULL);
+INSERT INTO usercourses VALUES ('dl564293@sju.edu', 3, 'Student', NULL);
+INSERT INTO usercourses VALUES ('ab567171@sju.edu', 3, 'Student', NULL);
+
+INSERT INTO usercourses VALUES ('ty502008@sju.edu', 4,'Student', NULL);
+INSERT INTO usercourses VALUES ('co564293@sju.edu', 4, 'Student', NULL);
+INSERT INTO usercourses VALUES ('st560563@sju.edu', 4, 'Student', NULL);
+INSERT INTO usercourses VALUES ('js562187@sju.edu', 4, 'Student', NULL);
+INSERT INTO usercourses VALUES ('es562838@sju.edu', 4, 'Student', NULL);
+INSERT INTO usercourses VALUES ('dl564293@sju.edu', 4, 'Student', NULL);
+INSERT INTO usercourses VALUES ('ab567171@sju.edu', 5, 'Student', NULL);
+INSERT INTO usercourses VALUES ('rm564293@sju.edu', 5, 'Student', NULL);
+INSERT INTO usercourses VALUES ('jz570129@sju.edu', 5, 'Student', NULL);
+INSERT INTO usercourses VALUES ('gz570130@sju.edu', 5, 'Student', NULL);
+INSERT INTO usercourses VALUES ('fb482509@sju.edu', 5, 'Student', NULL);
+INSERT INTO usercourses VALUES ('ps564293@sju.edu', 5, 'Student', NULL);
+INSERT INTO usercourses VALUES ('cl564293@sju.edu', 5, 'Student', NULL);
+INSERT INTO usercourses VALUES ('pw564293@sju.edu', 6, 'Student', NULL);
+INSERT INTO usercourses VALUES ('js562187@sju.edu', 6, 'Student', NULL);
+INSERT INTO usercourses VALUES ('es562838@sju.edu', 6, 'Student', NULL);
+INSERT INTO usercourses VALUES ('dl564293@sju.edu', 6, 'Student', NULL);
+INSERT INTO usercourses VALUES ('ab567171@sju.edu', 6, 'Student', NULL);
+INSERT INTO usercourses VALUES ('rm564293@sju.edu', 6, 'Student', NULL);
+
+DELETE FROM assignment;
+INSERT INTO assignment VALUES(NULL, 1, 'one-level hierarchical menu using Javascript', 'In this assignment you are to design a one-level hierarchical menu using Javascript. The CSS-styled menu should be declared as a hidden element somewhere in the beginning of your program as follows:', "/image/assignments/1/proj1.html", '2012-11-10', '2012-11-20', 'Individual');
+INSERT INTO assignment VALUES(NULL, 1, 'web registration using PHP', 'In this assignment you will design a web registration state machine on Maxwell using PHP, session tracking and MySql database as described below:', "/image/assignments/1/proj2.html", '2012-11-22', '2012-12-1', 'Individual');
+INSERT INTO assignment VALUES(NULL, 1, 'web-based message passing system', 'In this assignment you will design a web-based message passing system BuddyTalk on Maxwell using PHP, Ajax, JavaScript and MySql database as follows:', "/image/assignments/1/proj3.html", Now(), '2012-12-10', 'Group');
+
+DELETE FROM coursecontent;
+INSERT INTO coursecontent VALUES('HTML', 'HTML document structure, list, table, form, image', 'image/courses/Internet Application Development/HTML/introduction.mp4', 1);
+INSERT INTO coursecontent VALUES('HTML', 'XML, DTD, XML schema', 'image/courses/Internet Application Development/HTML/brief_intro_internet.pdf', 1);
+INSERT INTO coursecontent VALUES('Javascript', 'Basic javascript', 'image/courses/Internet Application Development/Javascript/javascript_1.webm',1);
+INSERT INTO coursecontent VALUES('Javascript', 'Advanced javascript', 'image/courses/Internet Application Development/Javascript/javascript_1.pdf',1);
+INSERT INTO coursecontent VALUES('Javascript', 'Ajax', 'image/courses/Internet Application Development/Javascript/javascript_2.pdf',1);
+INSERT INTO coursecontent VALUES('php', 'Basic php', 'image/courses/Internet Application Development/php/CSS.pdf',1);
+INSERT INTO coursecontent VALUES('php', 'Advanced php', 'image/courses/Internet Application Development/php/Origins and Evolution of HTML.pdf',1);
+
+DELETE FROM submission;
+INSERT INTO submission VALUES(NULL, 1, 'jz570129@sju.edu', NOW(), 90);
+INSERT INTO submission VALUES(NULL, 1,'gz570130@sju.edu', NOW(), 96);
+INSERT INTO submission VALUES (NULL, 1,'ty502008@sju.edu', NOW(), 100);
+INSERT INTO submission VALUES (NULL, 1,'co564293@sju.edu', NOW(), 96);
+INSERT INTO submission VALUES (NULL, 1,'st560563@sju.edu', NOW(), 92);
+INSERT INTO submission VALUES (NULL, 1,'js562187@sju.edu', NOW(), 75);
+INSERT INTO submission VALUES (NULL, 1,'es562838@sju.edu', NOW(), 80);
+INSERT INTO submission VALUES (NULL, 1,'fb482509@sju.edu', NOW(), 95);
+INSERT INTO submission VALUES (NULL, 1,'dl564293@sju.edu', NOW(), 88);
+INSERT INTO submission VALUES (NULL, 1,'ab567171@sju.edu', NOW(), 90);
+INSERT INTO submission VALUES (NULL, 1,'rm564293@sju.edu', NOW(), 100);
+INSERT INTO submission VALUES(NULL, 2, 'jz570129@sju.edu', NOW(), -1);
+INSERT INTO submission VALUES(NULL, 2,'gz570130@sju.edu', NOW(), -1);
+INSERT INTO submission VALUES (NULL, 2,'ty502008@sju.edu', NOW(), -1);
+INSERT INTO submission VALUES (NULL, 2,'co564293@sju.edu', NOW(), -1);
+INSERT INTO submission VALUES (NULL, 2,'st560563@sju.edu', NOW(), -1);
+INSERT INTO submission VALUES (NULL, 2,'js562187@sju.edu', NOW(), -1);
+INSERT INTO submission VALUES (NULL, 2,'es562838@sju.edu', NOW(), -1);
+INSERT INTO submission VALUES (NULL, 2,'fb482509@sju.edu', NOW(), 100);
+INSERT INTO submission VALUES (NULL, 2,'dl564293@sju.edu', NOW(), -1);
+INSERT INTO submission VALUES (NULL, 2,'ab567171@sju.edu', NOW(), -1);
+INSERT INTO submission VALUES (NULL, 2,'rm564293@sju.edu', NOW(), -1);
+INSERT INTO submission VALUES(NULL, 3, 'group1', NOW(), 90);
+INSERT INTO submission VALUES(NULL, 3, 'group2', NOW(), -1);
+INSERT INTO submission VALUES(NULL, 3, 'group3', NOW(), -1);
+INSERT INTO submission VALUES(NULL, 3, 'group4', NOW(), -1);
+
+DELETE FROM comments;
+INSERT INTO comments VALUES(NULL, 'Unexpected token !', 'Remove the token', 1, 'functionality', '../image/submissions/1/3/group1/friends/friends.html', 16, 'bforoura@sju.edu');
+INSERT INTO comments VALUES(NULL,'incorrect keyword NMTOKEN', 'Change it to TOKEN', 2, 'functionality', '../image/submissions/1/3/group1/friends/friends.html', 20, 'bforoura@sju.edu');
+
+
+DELETE FROM students;
+INSERT INTO students values('jz570129@sju.edu', 'computer science', 'undergraduate', 4.0);
+insert into students values('gz570130@sju.edu', 'computer science', 'graduate', 3.5);
+INSERT INTO students VALUES ('fb482509@sju.edu', 'computer science', 'graduate ', 3.8);
+INSERT INTO students VALUES ('ty502008@sju.edu', 'Mathmetics', 'graduate',3.8);
+INSERT INTO students VALUES ('co564293@sju.edu', 'Mathmetics', 'undergraduate', 3.5);
+INSERT INTO students VALUES ('st560563@sju.edu', 'Mathmetics', 'graduate', 3.7);
+INSERT INTO students VALUES ('js562187@sju.edu', 'computer science', 'undergraduate', 4.0);
+INSERT INTO students VALUES ('es562838@sju.edu', 'Mathmetics', 'undergraduate', 3.9);
+INSERT INTO students VALUES ('dl564293@sju.edu', 'Mathmetics science', 'undergraduate', 3.5);
+INSERT INTO students VALUES ('ab567171@sju.edu', 'Mathmetics', 'graduate', 3.8);
+INSERT INTO students VALUES ('rm564293@sju.edu', 'computer science', 'graduate', 3.7);
+INSERT INTO students VALUES ('ps564293@sju.edu', 'Mathmetics', 'undergraduate', 3.2);
+INSERT INTO students VALUES ('cl564293@sju.edu', 'computer science', 'undergraduate', 3.6);
+INSERT INTO students VALUES ('pw564293@sju.edu', 'Mathmetics', 'graduate', 3.9);
+
+DELETE FROM faculty;
+insert into faculty values('bforoura@sju.edu','computer science', 'Electrical Engineering, Computer Science', 'Professor');
+insert into faculty values('fatalay@sju.edu ','computer science', 'Mathematics, Computer Science', 'Associate Professor');
+INSERT INTO faculty VALUES ('tezel@sju.edu', 'computer science', 'Computer Science', 'Associate Professor');
+INSERT INTO faculty VALUES ('ggrevera@sju.edu', 'Mathmetics', 'Computer Science', 'Associate Professor');
+INSERT INTO faculty VALUES ('swei@sju.edu', 'computer science', 'Computer Science', 'Associate Professor');
+------WebKitFormBoundaryWowEdgJp4IzAVAu9--
