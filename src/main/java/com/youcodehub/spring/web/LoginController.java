@@ -1,10 +1,6 @@
 package com.youcodehub.spring.web;
 
-import java.util.Date;
-
-
 import javax.servlet.ServletException;
-
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
-import com.youcodehub.spring.service.CarManager;
 import com.youcodehub.spring.service.UserLoginValidator;
 import com.youcodehub.spring.service.UserManager;
 import com.youcodehub.spring.service.UserLogin;
@@ -31,29 +26,18 @@ public class LoginController{
 
 	protected final Log logger = LogFactory.getLog(getClass());
 	
-/*	@Autowired
+	@Autowired
 	private UserManager userManager;
 	public void setUserManager(UserManager userManager) {
 		this.userManager = userManager;
-	}*/
+	}
 	@Autowired
 	private UserLoginValidator validator;
 	
 	public void setValidator(UserLoginValidator validator) {
 		this.validator = validator;
 	}
-	@Autowired
-	private CarManager carManager;
 
-	public void setCarManager(CarManager carManager) {
-		this.carManager = carManager;
-	}
-
-	@ModelAttribute
-	public UserLogin createuserLoginFormBean(){
-		return new UserLogin();
-	}
-	
 	/*handle login page*/
 	/*either create command object first or denote as method param
 	 * so if ignore following UserLogin param, login still workds
@@ -61,6 +45,7 @@ public class LoginController{
 	@RequestMapping(method=RequestMethod.GET)
 	@Transactional(readOnly=true)
 	public String loginForm(UserLogin userlogin, Model model){
+		System.out.println("current model: " + model);
 		return "login";
 	}
 	
@@ -69,6 +54,7 @@ public class LoginController{
    public String onSubmit(@ModelAttribute("userLogin")  UserLogin userlogin,
 		   BindingResult result, ModelMap model)
             throws ServletException {
+	   
 	   validator.validate(userlogin, result);
 	   	if(result.hasErrors()){
 	   		return "login";
@@ -78,10 +64,9 @@ public class LoginController{
        
 	   	/*success login user will be added to session*/
 	   	model.addAttribute("validUserId", userId); /*this value will present in url param why?*/
-	   	/*model.addAttribute("mycar",carManager.getUserCarList(userId));
-	    logger.info("Inside of Model " + model.toString());
+	   	
 	   	String role = userManager.getRole(userId);
-	   	if(role.equals("customer")){*/
+	   	if(role.equals("customer")){
 	   		/*in this business(logic) design, the login-controller redirect page according to user's role */
 	   		/*other design may like this, controller return only one view but the url will along with the 
 	   		 * login user role information, that url will map to another controller, the controller will 
@@ -98,14 +83,15 @@ public class LoginController{
 	   		 * the coustomerContoller grab the session infor and create model in order that jsp can display the 
 	   		 * model values
 		   	 */
-	   /*		
-	   		return "redirect:customer/customerMain";the url structure don't indicate the folder structure customer may not exist
-	   	}else{
-	   		return "redirect:adminMain";
-	   	}*/
 	   	
-	   	return "redirect:user/main";
-	   //	return "redirect:user/main"+ userId;
+	   		return "redirect:customer/main"; // the url structure don't indicate the folder structure customer may not exist
+	   	}else if (role.equals("employee")){
+	   		return "redirect:employee/main";
+	   	} else {
+	   		logger.info("Not valid user " + userId + ".");
+			return "redirect:/login";
+	   	}
+
        
     }
 }

@@ -20,6 +20,25 @@
 		<property name="dataSource" ref="dataSource"></property >
 	</bean>
 	
+	<bean id="employeeJobManager" class="com.youcodehub.spring.service.SimpleEmployeeJobManager">
+		<property name="requestDao" ref="requestDao"></property>
+		<property name="repairJobDao" ref="repairJobDao"></property>
+		<property name="userDao" ref="userDao"></property>
+		<property name="categoryDao" ref="categoryDao"></property>
+	</bean>
+	
+	<bean id="requestDao" class="com.youcodehub.spring.repository.JdbcRequestDao">
+		<property name="dataSource" ref="dataSource"></property >
+	</bean>
+	
+	<bean id="repairJobDao" class="com.youcodehub.spring.repository.JdbcRepairJobDao">
+		<property name="dataSource" ref="dataSource"></property >
+	</bean>
+	
+	<bean id="categoryDao" class="com.youcodehub.spring.repository.JdbcCategoryDao">
+		<property name="dataSource" ref="dataSource"></property >
+	</bean>
+	
 	<!--
 	<bean id="userCarDao" class="com.youcodehub.spring.repository.JdbcUserCarDao">
 		<property name="dataSource" ref="dataSource"></property >

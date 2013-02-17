@@ -11,5 +11,6 @@ public interface UserManager {
 	public boolean isValidUser(String userId, String password);
 	public void registerUser(Users user);
 	public String getRole(String userId);
+	public Users getUserbyUsername(String username);
 	
 }

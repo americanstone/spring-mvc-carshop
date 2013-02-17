@@ -47,7 +47,10 @@ public class SimpleUserManager implements UserManager{
 		return userDao.getRole(userId);
 	}
 
-
+	@Override
+	public Users getUserbyUsername(String username) {
+		return userDao.getUserbyUsername(username);
+	}
 	
 
 }

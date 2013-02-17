@@ -10,5 +10,6 @@ public interface UserDao {
 	public boolean findUser(String id);
 	public boolean validUser(String id,String password);
 	public String getRole(String username);
+	public Users getUserbyUsername(String username);
 	
 }

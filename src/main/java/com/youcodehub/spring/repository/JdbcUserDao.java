@@ -8,6 +8,7 @@ import java.util.List;
 
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.PreparedStatementSetter;
+import org.springframework.jdbc.core.simple.ParameterizedBeanPropertyRowMapper;
 import org.springframework.jdbc.core.support.JdbcDaoSupport;
 import org.springframework.stereotype.Repository;
 
@@ -59,6 +60,14 @@ public class JdbcUserDao extends JdbcDaoSupport implements UserDao{
 	public String getRole(String username) {
 		String sql = "SELECT role FROM USERS WHERE USERNAME = ?";
 		return getJdbcTemplate().queryForObject(sql,new Object[]{username},String.class);
+	}
+
+
+	@Override
+	public Users getUserbyUsername(String username) {
+		String sql = "select * from users where username = ?";
+		Users user = getJdbcTemplate().queryForObject(sql, ParameterizedBeanPropertyRowMapper.newInstance(Users.class), new Object[]{username});
+		return user;
 	}
 
 }
